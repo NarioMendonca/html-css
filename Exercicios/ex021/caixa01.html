@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1 {
+            background-color: lightgray;
+            border-width: 10px;
+            width: 300px;
+            height: 300px;
+            border-color: darkslategray;
+            border-style: solid;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 2px;
+        }
+
+        a:hover {
+            border-bottom-style: dotted;
+            border-bottom-color: blue;
+            border-bottom-width: 2px;
+        }
+
+        p {
+            display: inline;
+        }
+
+        #bola {
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(233, 131, 223, 0.459);
+            animation: voltar 3s infinite;
+        }
+
+        @keyframes voltar {
+            0% {
+                transform: translateY(0);
+        }
+    }
+        #bola:hover {
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgba(233, 131, 223, 0.459);
+            animation: flutuar 3s ease-in-out infinite;
+        }
+
+        @keyframes flutuar{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos também são exemplos de box level, mas os </p><a href="#">links são exemplos de caixas inline-level</a> vamos ver como tudo isso funciona
+    <div id="bola">
+
+    </div>
+</body>
+</html>

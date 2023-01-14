@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Testando imagens dinamicas</h1>
+    <p>Veja a imagem abaixo e aumente ou diminua a janela do seu navegador, e note como ela se ajusta de acordo com o tamanho da janela</p>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="Imagem grade">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="grendayhd.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir audio, clique <a href="grendayhd.mp3" download="greenday-bouvelard-of-broken-dreams.mp3" type="audio/mp3">aqui</a> para baixar seu arquivo mp3</p>
+    </audio>
+</body>
+</html>

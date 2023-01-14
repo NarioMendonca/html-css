@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste Hover</title>
+    <style>
+        body {
+            background-color: rgba(211, 211, 211, 0.541);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > a > div#caixa {
+            display: none;
+        }
+
+        div:hover > a > div#caixa {
+            text-align: justify;
+            text-decoration: none;
+            color: darkgreen;
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            display: block;
+        }
+
+        div:hover > a > div#caixa:active {
+            color: blue;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Hover em css</h1>
+    <div>
+        <p>passe o mouse aqui</p>
+        <a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22" target="_blank" rel="external">
+            <div id="caixa">
+                <p>Ai está a mensagem escondida!, clique nessa caixa para ser redirecionado para um video de curso explicando o que aconteceu aqui</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
